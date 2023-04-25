@@ -6,17 +6,17 @@ public class Calculo {
 
         switch (tipoCalculo){
             case "Seno":
-                double senoAngulo = Math.round(seno(anguloInterno) * 10/ 10.0);
+                double senoAngulo = seno(anguloInterno);
                 double adjacenteDouble = ((int)catetoOposto * (int)hipotenusa)/senoAngulo;
                 resultado = adjacenteDouble;
                 break;
             case "Cosseno":
-                double cossenhoAngulo = Math.round(cosseno(anguloInterno) * 10/ 10.0);
+                double cossenhoAngulo = cosseno(anguloInterno);
                 double opostoDouble = ((int)catetoAdjacente * (int)hipotenusa)/cossenhoAngulo;
                 resultado = opostoDouble;
                 break;
             case "Tangente":
-                double tangenteAngulo = Math.round(tangente(anguloInterno) * 10/ 10.0);
+                double tangenteAngulo = tangente(anguloInterno);
                 double hipotenusaDouble = ((int)catetoOposto * (int)catetoAdjacente)/tangenteAngulo;
                 resultado = hipotenusaDouble;
                 break;
@@ -38,5 +38,4 @@ public class Calculo {
         double radianos = Math.toRadians(angulo);
         return Math.tan(radianos);
     }
-
 }
