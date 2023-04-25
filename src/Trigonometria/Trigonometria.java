@@ -59,7 +59,7 @@ public class Trigonometria {
 
             for (int i = 0; i < 3; i++){
                 valorMisterioso = lista.get(i);
-                if (valorMisterioso == "X"){
+                if (valorMisterioso == "?"){
                     valorMisterioso = resultado;
                 }
             }
@@ -67,7 +67,7 @@ public class Trigonometria {
             System.out.println("A resposta é "+valorMisterioso);
 
         } catch (Exception e){
-            System.out.println("Insira um valor válido!\n");
+            System.out.println("Insira um valor ou fórmula válida!\n");
             escolha();
         }
     }
